@@ -6,7 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/c9c6281d31.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h2>My Text Editor</h2>
+      <div class="editor">
+        <div class="editor-header">
+          <!-- text -> bold italic underline -->
+          <ul class="text_format">
+            <li><i class="fa-solid fa-bold"></i></li>
+            <li><i class="fa-solid fa-italic"></i></li>
+            <li><i class="fa-solid fa-underline"></i></li>
+          </ul>
+          <!-- text -> left center right align -->
+          <ul class="text_align">
+            <li><i class="fa-solid fa-align-left"></i></li>
+            <li><i class="fa-solid fa-align-center"></i></li>
+            <li><i class="fa-solid fa-align-right"></i></li>
+          </ul>
+          <ul class="text_style">
+            <li>
+              <input class="font_size" type="number" value="16" />
+            </li>
+            <li><input type="color" name="" id="" /></li>
+          </ul>
+        </div>
+        <hr />
+        <!-- editor body -->
+        <div class="editor-body">
+          <textarea name="" id="input_text"></textarea>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
